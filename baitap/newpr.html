@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+
+    <link rel="stylesheet" href="newpr.css">
+    <script src="newpr.js" defer></script>
+</head>
+
+<body>
+
+    <h1 class="title">New Product</h1>
+    <form>
+        <div class="input">
+            <label for="pro-name">Product Name</label>
+            <input type="text" id="pro-name" placeholder="Áo sơ mi">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" placeholder="20">
+        </div>
+        <div class="input">
+            <label for="price">Price</label>
+            <input type="number" id="price" placeholder="400000">
+            <label for="discount">Discount</label>
+            <input type="number" id="discount" placeholder="10">
+        </div>
+        <button type="button" onclick="sell()">Sell</button>
+        <button type="button" onclick="cancel()">Cancel</button>
+
+        <br><br>
+        <table class="table">
+
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Quần âu</td>
+                <td>12</td>
+                <td>30000</td>
+                <td>10</td>
+                <td>324000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Áo sơ mi</td>
+                <td>10</td>
+                <td>400000</td>
+                <td>10</td>
+                <td>3600000</td>
+            </tr>
+            <tbody id="productList"></tbody>
+        </table>
+    </form>
+</body>
+
+</html>

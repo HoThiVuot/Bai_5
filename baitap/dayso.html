@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng</title>
+    <link rel="stylesheet" href="dayso.css">
+</head>
+
+<body>
+    <h1>Chào các bạn</h1>
+    <p>Tổng dãy số từ 1 đến 5 là: </p>
+    <p>kết quả: <span id="kq"></span></p>
+    <input type="button" value="Tính tổng" onclick="tong()">
+    <script>
+        function tong() {
+            let tong = 0;
+            for (let i = 0; i < 6; i++) {
+                tong = tong + i;
+            }
+            document.getElementById("kq").innerHTML = tong;
+        }
+    </script>
+</body>
+
+</html>
